@@ -13,11 +13,11 @@ This implementation comes from [toyota-m2k/CircularProgressBar](https://github.c
 Subclass of FrameLayout which support `maxWidth` / `maxHeight` properties.
 I don't know why the original FrameLayout (or ViewGroup) is not support those properties, it is too inconvenient.
 A little trick in measuring size of view makes it possible to limit the width/height of FrameLayout.
-Though it might be applicable for other ViewGroups (LinearLayout, GridLayout, ConstraintLayout ...), I think we will have same effect by ViewGroup with MATCH_PARENT as child of the limitted-sized FrameLayout.
+Though it might be applicable for other ViewGroups (LinearLayout, GridLayout, ConstraintLayout ...), I think we will have same effect by ViewGroup with MATCH_PARENT as a child of the size-limitted FrameLayout.
 
 ## Viewbox
 
-A view similar to Viewbox in WPF, can stretch and scale a single child to fill it's size.
+This is a view similar to Viewbox in WPF (it is nothing to do with "viewBox" attribute in SVG) and it can stretch and scale a single child to fill it's size.
 Viewbox is inherited from `FrameLayoutEx`, so it support `maxWidth` / `maxHeight` properties.
 And it also support `expandable` property (default is false). Setting `expandable = true` allows Viewbox to reduce or expand the size of the child to fit, otherwise allow only to reduce the size of the child and render it according in its gravity.
 
