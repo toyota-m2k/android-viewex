@@ -19,3 +19,20 @@ Though it might be applicable for other ViewGroups (LinearLayout, GridLayout, Co
 
 A view similar to Viewbox in WPF, can stretch and scale a single child to fill it's size.
 
+# Gradle
+
+Add it in your root build.gradle at the end of repositories:
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+Add the dependency
+```
+dependencies {
+  implementation 'com.github.toyota-m2k:android-viewex:Tag'
+}
+```
