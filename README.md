@@ -1,6 +1,6 @@
 # android-viewex
 
-This library contains some implementations general purpose Views for Android Application.
+This library contains some implementations of general purpose Views for Android application.
 
 
 ## CircleProgressView
