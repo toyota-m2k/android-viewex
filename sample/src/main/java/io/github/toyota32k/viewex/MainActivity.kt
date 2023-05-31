@@ -7,15 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.AutoCompleteTextView
 import android.widget.FrameLayout
 import android.widget.Spinner
 import androidx.core.view.children
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import io.github.toyota32k.bindit.Binder
-import io.github.toyota32k.bindit.CheckBinding
-import io.github.toyota32k.bindit.SliderBinding
+import io.github.toyota32k.binder.Binder
+import io.github.toyota32k.binder.CheckBinding
+import io.github.toyota32k.binder.SliderBinding
 import io.github.toyota32k.utils.disposableObserve
 import io.github.toyota32k.utils.dp2px
 import io.github.toyota32k.utils.setLayoutHeight
@@ -116,5 +117,13 @@ class MainActivity : AppCompatActivity() {
             },
 
         )
+
+        // Adapter作成
+        val menuList = arrayListOf("Java", "Kotlin", "JavaScript", "TypeScript")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, menuList)
+        // Adapter登録
+        val menu_entity = findViewById<AutoCompleteTextView>(R.id.menu_entity)
+        menu_entity.setAdapter(adapter)
+        menu_entity.setText(menuList[0], false)
     }
 }
