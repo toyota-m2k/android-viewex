@@ -3,16 +3,12 @@ plugins {
     id 'kotlin-android'
     id 'maven-publish'
 }
-repositories {
-    mavenCentral()
-    google()
-    maven { url "https://jitpack.io" }
-}
 
 group = "com.github.toyota-m2k"
 version='1.0'
 
 android {
+    namespace 'io.github.toyota32k.viewex.library'
     compileSdk 34
 
     defaultConfig {
@@ -44,20 +40,18 @@ android {
     publishing {
         singleVariant('release') {
             withSourcesJar()
-            withJavadocJar()
         }
     }
-    namespace 'io.github.toyota32k.viewex.library'
 }
 
 dependencies {
-    implementation "androidx.core:core-ktx:$core_ktx_version"
-    implementation "androidx.appcompat:appcompat:$appcompat_version"
-    implementation "com.google.android.material:material:$material_version"
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
 
-    testImplementation "junit:junit:$junit_version"
-    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso_version"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
 // ./gradlew publishToMavenLocal
