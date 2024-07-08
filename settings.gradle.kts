@@ -11,10 +11,10 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         mavenLocal()
-        maven { url "https://jitpack.io" }
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
 rootProject.name = "viewex"
-include ':sample'
-include ':library'
+include(":sample")
+include(":library")
