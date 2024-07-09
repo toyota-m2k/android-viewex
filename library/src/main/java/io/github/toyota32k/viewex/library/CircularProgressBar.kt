@@ -94,14 +94,18 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 
     init {
         mPaint = Paint(Paint.ANTI_ALIAS_FLAG)
-        context.obtainStyledAttributes(attrs, R.styleable.CircularProgressBar).use { ary ->
+        val ary = context.obtainStyledAttributes(attrs, R.styleable.CircularProgressBar)
+        try {
             progressColor = ary.getColor(R.styleable.CircularProgressBar_progressColor, progressColor)
             ringBaseColor = ary.getColor(R.styleable.CircularProgressBar_ringBaseColor, ringBaseColor)
             insideRingColor = ary.getColor(R.styleable.CircularProgressBar_insideRingColor, insideRingColor)
             textColor = ary.getColor(R.styleable.CircularProgressBar_textColor, textColor)
             showText = ary.getBoolean(R.styleable.CircularProgressBar_showText, showText)
             ringThicknessRatio = Range(0f,1f).clamp(ary.getFloat(R.styleable.CircularProgressBar_ringThicknessRatio, ringThicknessRatio))
+        } finally {
+            ary.recycle()
         }
+
     }
 
 

@@ -31,9 +31,12 @@ open class FrameLayoutEx
 
     init {
         val a = getContext().obtainStyledAttributes(attrs, R.styleable.FrameLayoutEx)
-        maxWidth = a.getDimensionPixelSize(R.styleable.FrameLayoutEx_maxWidth, Int.MAX_VALUE)
-        maxHeight = a.getDimensionPixelSize(R.styleable.FrameLayoutEx_maxHeight, Int.MAX_VALUE)
-        a.recycle()
+        try {
+            maxWidth = a.getDimensionPixelSize(R.styleable.FrameLayoutEx_maxWidth, Int.MAX_VALUE)
+            maxHeight = a.getDimensionPixelSize(R.styleable.FrameLayoutEx_maxHeight, Int.MAX_VALUE)
+        } finally {
+            a.recycle()
+        }
     }
 
     private fun makeMeasureSpec(spec:Int, max:Int) :Int {

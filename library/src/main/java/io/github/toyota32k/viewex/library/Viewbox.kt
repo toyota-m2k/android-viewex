@@ -29,8 +29,11 @@ open class Viewbox
 
     init {
         val a = getContext().obtainStyledAttributes(attrs, R.styleable.Viewbox)
-        expandable = a.getBoolean(R.styleable.Viewbox_expandable, false)
-        a.recycle()
+        try {
+            expandable = a.getBoolean(R.styleable.Viewbox_expandable, false)
+        } finally {
+            a.recycle()
+        }
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
