@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "io.github.toyota32k.viewex.library"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         minSdk = 23
