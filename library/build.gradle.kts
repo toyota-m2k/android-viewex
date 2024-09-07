@@ -50,7 +50,7 @@ publishing {
         register<MavenPublication>("release") {
             // You can then customize attributes of the publication as shown below.
             groupId = "com.github.toyota-m2k"
-            artifactId = "viewex"
+            artifactId = "android-viewex"
             version = project.findProperty("githubReleaseTag") as String? ?: "LOCAL"
 
             afterEvaluate {
