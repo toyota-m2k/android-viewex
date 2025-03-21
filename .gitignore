@@ -20,3 +20,4 @@ local.properties
 .idea/gradle.xml
 .idea/kotlinc.xml
 .idea/misc.xml
+.idea/AndroidProjectSystem.xml
