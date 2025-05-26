@@ -1,7 +1,7 @@
 [versions]
 #plugins
-kotlin = "2.1.20"
-agp = "8.9.2"
+kotlin = "2.1.21"
+agp = "8.10.0"
 
 #libraries
 coreKtx = "1.16.0"
@@ -9,12 +9,12 @@ appcompat = "1.7.0"
 material = "1.12.0"
 constraintLayout = "2.2.1"
 lifecycleExtensions = "2.2.0"
-lifecycleKtx = "2.8.7"
+lifecycleKtx = "2.9.0"
 junit = "4.13.2"
 androidxJunit = "1.2.1"
 espressoCore = "3.6.1"
-androidUtilities = "2.8.1"  # for Sample
-androidBinding = "1.5.4"    # for Sample
+androidUtilities = "2.8.2"  # for Sample
+androidBinding = "1.5.5"    # for Sample
 #androidUtilities = "LOCAL"
 #androidBinding = "LOCAL"
 
