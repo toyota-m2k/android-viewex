@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
 import android.widget.FrameLayout
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
@@ -20,10 +19,10 @@ import androidx.lifecycle.ViewModelProvider
 import io.github.toyota32k.binder.Binder
 import io.github.toyota32k.binder.CheckBinding
 import io.github.toyota32k.binder.SliderBinding
-import io.github.toyota32k.utils.disposableObserve
-import io.github.toyota32k.utils.dp2px
-import io.github.toyota32k.utils.setLayoutHeight
-import io.github.toyota32k.utils.setLayoutWidth
+import io.github.toyota32k.utils.android.dp2px
+import io.github.toyota32k.utils.android.setLayoutHeight
+import io.github.toyota32k.utils.android.setLayoutWidth
+import io.github.toyota32k.utils.lifecycle.disposableObserve
 import io.github.toyota32k.viewex.library.Viewbox
 import kotlin.math.roundToInt
 

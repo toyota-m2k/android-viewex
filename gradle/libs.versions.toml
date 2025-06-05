@@ -14,7 +14,7 @@ junit = "4.13.2"
 androidxJunit = "1.2.1"
 espressoCore = "3.6.1"
 androidUtilities = "3.0.0"  # for Sample
-androidBinding = "1.6.1"    # for Sample
+androidBinding = "1.7.0"    # for Sample
 #androidUtilities = "LOCAL"
 #androidBinding = "LOCAL"
 
