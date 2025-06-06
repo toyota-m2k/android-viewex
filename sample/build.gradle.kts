@@ -40,7 +40,6 @@ dependencies {
     implementation(libs.lifecycleRuntimeKtx)
     implementation(libs.lifecycleLiveDataKtx)
     implementation(libs.lifecycleViewModelKtx)
-    implementation(libs.android.utilities)
     implementation(libs.android.binding)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidxJunit)
