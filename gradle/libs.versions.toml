@@ -13,7 +13,7 @@ lifecycleKtx = "2.9.1"
 junit = "4.13.2"
 androidxJunit = "1.2.1"
 espressoCore = "3.6.1"
-androidBinding = "1.8.0"    # for Sample
+androidBinding = "1.9.0"    # for Sample
 #androidUtilities = "LOCAL"
 #androidBinding = "LOCAL"
 
