@@ -1,19 +1,19 @@
 [versions]
 #plugins
 kotlin = "2.2.10"
-agp = "8.12.1"
+agp = "8.13.0"
 
 #libraries
 coreKtx = "1.17.0"
 appcompat = "1.7.1"
-material = "1.12.0"
+material = "1.13.0"
 constraintLayout = "2.2.1"
 lifecycleExtensions = "2.2.0"
-lifecycleKtx = "2.9.2"
+lifecycleKtx = "2.9.3"
 junit = "4.13.2"
 androidxJunit = "1.3.0"
 espressoCore = "3.7.0"
-androidBinding = "1.9.10"    # for Sample
+androidBinding = "1.9.11"    # for Sample
 
 [libraries]
 coreKtx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
