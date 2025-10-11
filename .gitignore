@@ -21,3 +21,7 @@ local.properties
 .idea/kotlinc.xml
 .idea/misc.xml
 .idea/AndroidProjectSystem.xml
+.idea/copilot.data.migration.agent.xml
+.idea/copilot.data.migration.ask.xml
+.idea/copilot.data.migration.ask2agent.xml
+.idea/copilot.data.migration.edit.xml
