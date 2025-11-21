@@ -22,3 +22,4 @@ local.properties
 .idea/misc.xml
 .idea/AndroidProjectSystem.xml
 .idea/copilot.data.migration.*.xml
+.idea/markdown.xml
