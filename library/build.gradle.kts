@@ -7,8 +7,10 @@ plugins {
 
 configure<LibraryExtension> {
     namespace = "io.github.toyota32k.viewex.library"
-    compileSdk = 37
-
+    compileSdk {
+        version = release(37)
+        compileSdkMinor = 1
+    }
     defaultConfig {
         minSdk = 23
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -57,6 +59,7 @@ publishing {
 
             afterEvaluate {
                 from(components["release"])
+                artifact(tasks.named("sourceReleaseJar"))
             }
         }
     }

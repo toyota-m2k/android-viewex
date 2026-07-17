@@ -6,8 +6,10 @@ plugins {
 
 configure<ApplicationExtension> {
     namespace = "io.github.toyota32k.viewex"
-    compileSdk = 37
-
+    compileSdk {
+        version = release(37)
+        compileSdkMinor = 1
+    }
     defaultConfig {
         applicationId = "io.github.toyota32k.viewex"
         minSdk = 23
@@ -42,6 +44,7 @@ dependencies {
     implementation(libs.lifecycleRuntimeKtx)
     implementation(libs.lifecycleLiveDataKtx)
     implementation(libs.lifecycleViewModelKtx)
+    implementation(libs.android.utilities)
     implementation(libs.android.binding)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidxJunit)
