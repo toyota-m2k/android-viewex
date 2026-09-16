@@ -16,5 +16,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "viewex"
-include(":sample")
 include(":library")
+if (System.getenv("JITPACK") == null) {
+    include(":sample")
+}
